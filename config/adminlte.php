@@ -196,9 +196,9 @@ return [
     'classes_content_wrapper' => '',
     'classes_content_header' => '',
     'classes_content' => '',
-    'classes_sidebar' => 'sidebar-dark-primary elevation-4',
+    'classes_sidebar' => 'sidebar-dark-purple navbar-lightblue elevation-4',
     'classes_sidebar_nav' => '',
-    'classes_topnav' => 'navbar-white navbar-light',
+    'classes_topnav' => '',
     'classes_topnav_nav' => 'navbar-expand',
     'classes_topnav_container' => 'container',
 
@@ -306,33 +306,34 @@ return [
         ],
 
         // Sidebar items:
-        [
-            'type' => 'sidebar-menu-search',
-            'text' => 'search',
-        ],
-        [
-            'text' => 'blog',
-            'url' => 'admin/blog',
-            'can' => 'manage-blog',
-        ],
-        [
-            'text' => 'pages',
-            'url' => 'admin/pages',
-            'icon' => 'far fa-fw fa-file',
-            'label' => 4,
-            'label_color' => 'success',
-        ],
-        ['header' => 'account_settings'],
-        [
-            'text' => 'profile',
-            'url' => 'admin/settings',
-            'icon' => 'fas fa-fw fa-user',
-        ],
-        [
-            'text' => 'change_password',
-            'url' => 'admin/settings',
-            'icon' => 'fas fa-fw fa-lock',
-        ],
+        // [
+        //     'type' => 'sidebar-menu-search',
+        //     'text' => 'search',
+        // ],
+        // [
+        //     'text' => 'blog',
+        //     'url' => 'admin/blog',
+        //     'can' => 'manage-blog',
+        // ],
+        // [
+        //     'text' => 'pages',
+        //     'url' => 'admin/pages',
+        //     'icon' => 'far fa-fw fa-file',
+        //     'label' => 4,
+        //     'label_color' => 'success',
+        // ],
+        ['header' => 'Pages'],
+        // [
+        //     'text' => 'profile',
+        //     'url' => 'admin/settings',
+        //     'icon' => 'fas fa-fw fa-user',
+        //     'classes' => 'border background-color-button',
+        // ],
+        // [
+        //     'text' => 'change_password',
+        //     'url' => 'admin/settings',
+        //     'icon' => 'fas fa-fw fa-lock',
+        // ],
         // [
         //     'text' => 'multilevel',
         //     'icon' => 'fas fa-fw fa-share',
@@ -375,42 +376,56 @@ return [
             'text' => 'Labels',
             'url' => 'labels',
             'icon' => 'fas fa-regular fa-copyright',
+            'classes' => 'text-white',
         ],
         [
             'text' => 'Artists',
             'url' => 'artists',
             'icon' => 'fas fa-fw fa-user',
+            'classes' => 'text-white',
         ],
         [
             'text' => 'Genres',
             'url' => 'genres',
             'icon' => 'fas fa-fw fa-user',
+            'classes' => 'text-white',
         ],
         [
             'text' => 'Songs',
             'url' => 'songs',
             'icon' => 'fas fa-regular fa-compact-disc',
+            'classes' => 'text-white',
         ],
         [
             'text' => 'Qualities',
             'url' => 'qualities',
             'icon' => 'fas fa-regular fa-star',
+            'classes' => 'text-white',
+        ],
+        [
+            'text' => 'Albums',
+            'url' => 'albums',
+            'icon' => 'fas fa-regular fa-star',
+            'classes' => 'text-white',
         ],
         ['header' => 'labels'],
         [
             'text' => 'important',
             'icon_color' => 'red',
             'url' => '#',
+            'classes' => 'text-white',
         ],
         [
             'text' => 'warning',
             'icon_color' => 'yellow',
             'url' => '#',
+            'classes' => 'text-white',
         ],
         [
             'text' => 'information',
             'icon_color' => 'cyan',
             'url' => '#',
+            'classes' => 'text-white',
         ],
     ],
 
@@ -567,4 +582,8 @@ return [
     */
 
     'livewire' => false,
+
+    'custom_css' => [
+        'css/admin.css',
+    ],
 ];

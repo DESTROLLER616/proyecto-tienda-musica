@@ -19,6 +19,7 @@ class LabelFactory extends Factory
         return [
             'name' => $this->faker->company,
             'description' => $this->faker->sentence,
+            'avatar' => $this->faker->imageUrl(),
         ];
     }
 }

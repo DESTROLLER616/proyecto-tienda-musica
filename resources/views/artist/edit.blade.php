@@ -21,7 +21,7 @@
 
         <h3>Image artist</h3>
         <div class="container d-flex justify-content-center">
-            <img id="preview-image" src="{{ asset('storage/'.$artist->image_path) }}" alt="Preview Image" class="w-50 img-fluid rounded-circle" />
+            <img id="preview-image" src="{{ asset('storage/'.$label->avatar) }}" alt="Preview Image" class="w-50 img-fluid rounded-circle" />
         </div>
 
         <div>

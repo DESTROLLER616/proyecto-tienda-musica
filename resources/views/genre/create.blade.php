@@ -27,14 +27,14 @@
                     <div class="form-group">
                         <label for="nombre">name</label>
                         <input type="text" class="form-control" id="name" name="name" value="{{old('name')}}" />
-                     </div>
+                    </div>
 
-                     <div class="form-group">
-                         <label for="color">color</label>
-                         <input type="color" class="form-control" id="hex_color" name="hex_color" value="{{old('hex_color')}}" />
-                     </div>
+                    <div class="form-group">
+                        <label for="color">color</label>
+                        <input type="color" class="form-control" id="hex_color" name="hex_color" value="{{old('hex_color')}}" />
+                    </div>
 
-                     <button type="submit" class="btn btn-success">Save genre</button>
+                    <button type="submit" class="btn btn-success">Save genre</button>
                 </form>
             </div>
         </div>

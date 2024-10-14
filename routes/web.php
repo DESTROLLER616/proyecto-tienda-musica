@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AlbumController;
 use App\Http\Controllers\ArtistController;
 use App\Http\Controllers\GenreController;
 use App\Http\Controllers\LabelController;
@@ -20,3 +21,4 @@ Route::resource('/labels', LabelController::class)->middleware('auth');
 Route::resource('/artists', ArtistController::class)->middleware('auth');
 Route::resource('/genres', GenreController::class)->middleware('auth');
 Route::resource('/qualities', QualityController::class)->middleware('auth');
+Route::resource('/albums', AlbumController::class)->middleware('auth');

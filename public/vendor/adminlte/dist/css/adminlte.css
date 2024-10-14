@@ -32,6 +32,7 @@
   --danger: #dc3545;
   --light: #f8f9fa;
   --dark: #343a40;
+  --music-shop-color: #24b8dd;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -17128,6 +17129,11 @@ body.text-sm .control-sidebar {
 .navbar-indigo.navbar-dark .form-control-navbar:focus + .input-group-append .btn-navbar {
   background-color: #7528f3;
   border-color: #823cf4 !important;
+  color: #fff;
+}
+
+.navbar-music-color {
+  background-color: #24b8dd;
   color: #fff;
 }
 

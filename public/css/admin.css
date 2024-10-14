@@ -1,0 +1,20 @@
+.navbar-custom {
+    background-color: #4CAF50; /* Cambia este color por el que desees */
+    color: rgb(216, 65, 65);
+}
+
+.background-color-button {
+    background-color: #000000; /* Cambia este color por el que desees */
+    color: #000000;
+}
+
+.text-white {
+    color: #FFFFFF; /* Cambia este color por el que desees */
+}
+
+.background-image {
+    background-image: url('../images/background.svg'); /* Cambia esta imagen por la que desees */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}

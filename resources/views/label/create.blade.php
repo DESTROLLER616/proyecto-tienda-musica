@@ -13,8 +13,9 @@
 
 <div class="row">
        <hr>
-       <form action="{{ route('labels.store') }}" method="post" class="col-lg-7">
+       <form action="{{ route('labels.store') }}" enctype="multipart/form-data" method="post" class="col-lg-7">
            @csrf <!-- Protección contra ataques ya implementado en laravel  https://www.welivesecurity.com/la-es/2015/04/21/vulnerabilidad-cross-site-request-forgery-csrf/-->
+           @method('POST')
            @if($errors->any())
                <div class="alert alert-danger">
                    <ul>
@@ -25,6 +26,16 @@
                </div>
            @endif
 
+           <h3>Image label</h3>
+            <div class="container d-flex justify-content-center">
+                <p id="message-image-preview" class="mt-8">Image no loaded :(</p>
+                <img id="preview-image" src="#" alt="Preview Image" class="w-50 img-fluid rounded-circle" style="display: none" />
+            </div>
+
+            <div>
+                <label for="avatar">Choose a profile picture:</label>
+                <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg" />
+            </div>
 
            <div class="form-group">
                <label for="nombre">name</label>
@@ -39,4 +50,17 @@
        </form>
    </div>
 </div>
+
+<script>
+    document.getElementById('avatar').addEventListener('change', function(event) {
+        const [file] = event.target.files;
+        if (file) {
+            const previewImage = document.getElementById('preview-image');
+            const messageImagePreview = document.getElementById('message-image-preview');
+            previewImage.src = URL.createObjectURL(file);
+            previewImage.style.display = 'block';
+            messageImagePreview.style.display = 'none';
+        }
+    });
+</script>
 @endsection
